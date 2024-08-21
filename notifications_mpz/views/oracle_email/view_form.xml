@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_oracle_email_form" model="ir.ui.view">
+            <field name="name">notifications_mpz.oracle_email.form</field>
+            <field name="model">notifications_mpz.oracle_email</field>
+            <field name="arch" type="xml">
+                <form string="Oracle Email">
+                    <sheet>
+                        <group>
+                            <field name="user_id" />
+                            <field name="fingerprint" />
+                            <field name="tenancy" />
+                            <field name="region" />
+                            <field name="compartment_id" />
+                            <field name="key_file" filename="key_file_filename"/>
+                            <field name="state" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

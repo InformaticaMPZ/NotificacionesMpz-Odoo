@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_oracle_email_tree" model="ir.ui.view">
+            <field name="name">notifications_mpz.oracle_email.tree</field>
+            <field name="model">notifications_mpz.oracle_email</field>
+            <field name="arch" type="xml">
+                <tree string="Oracle Emails">
+                    <field name="id" />
+                    <field name="user_id" />
+                    <field name="fingerprint" />
+                    <field name="region" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_root_notifications_mpz" name="Notification Email" sequence="10">
+            <menuitem id="menu_general" name="General" sequence="11">
+                <menuitem id="menu_oracle_email_tree_action" name="Oracle Email"
+                    action="notifications_mpz.action_oracle_email_tree"
+                    groups="notifications_mpz.res_groups_admin_oracle_email" />
+            </menuitem>
+        </menuitem>
+    </data>
+</odoo>

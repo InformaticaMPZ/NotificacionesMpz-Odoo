@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="notifications_mpz.notification_time_report">
+            <div
+                style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px; max-width: 600px; margin: 0 auto; background-color: #ffffff; flex-wrap: wrap;">
+                <div
+                    style="flex: 0 1 auto; text-align: center; margin-right: 10px; margin-bottom: 10px;">
+                    <img src="https://www.perezzeledon.go.cr/images/escudo/escudo_400x518.png"
+                        alt="Escudo" style="max-width: 50px;" width="80" max-width="80" />
+                </div>
+                <div
+                    style="flex: 0 1 auto; text-align: center; font-family: Arial, sans-serif; font-size: 18px; color: #333;">
+                    <h3 style="margin: 0;">Municipalidad de Pérez Zeledón</h3>
+                </div>
+            </div>
+
+            <div
+                style="font-family: Arial, sans-serif; background-color: #ffffff; max-width: 600px; margin: 0 auto; border-radius: 10px; border: 1px solid #ababac; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                <div
+                    style="background-color: #093F88; padding: 20px; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <img src="https://www.perezzeledon.go.cr/images/cronometro.png" alt="Cronómetro"
+                        style="max-width: 120px; display: block; margin: 0 auto;" width="120" max-width="120"  />
+                    <h2 style="color: #ffffff; text-align: center; font-size: 22px; margin: 20px 0;">¡Atención
+                        se está acabando el tiempo!</h2>
+                </div>
+                <div style="padding: 20px;">
+                    <p
+                        style="color: #000000; font-size: 16px; line-height: 1.5; text-align: justify;">
+                        El tiempo de estacionamiento para la <strong>placa: <t t-esc="plate_number" /></strong>
+                        está a punto de vencer. <strong>Tiempo restante <t t-esc="remaining_time" />
+                        minutos.</strong> Por favor, asegúrate de renovar el tiempo para evitar
+                        multas. </p>
+                </div>
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <a href="https://www.perezzeledon.go.cr/pagos/pagos-online/#/consulta"
+                        style="background-color: #db3d24; color: #ffffff;border: 1px solid #888; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-size: 18px; display: inline-block; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                        <img src="https://www.perezzeledon.go.cr/images/comprar.png" alt="Icono"
+                            style="max-width: 40px; display: block; margin: 0 auto;" width="40" height="40" max-width="40" />
+                    </a>
+                    <div
+                        style="margin-top: 10px; font-family: Arial, sans-serif; font-size: 18px; color: #333;">
+                        Comprar Tiempo
+                    </div>
+                </div>
+
+            </div>
+            <div
+                style="font-family: Arial, sans-serif; background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+                <footer
+                    style="margin-top: 30px; padding-top: 10px; text-align: center; color: #555;">
+                    <div style="margin-bottom: 10px; text-align: center;">
+                        <p style="color:#555">Si tiene alguna pregunta, llamenos al 2220-6736 o envíe su consulta a <span
+                                style="color: #000000; font-size: 14px; line-height: 21px;">
+                                <a style="color: #00000;" href="mailto:tesoreria@mpz.go.cr"
+                                    target="_blank" rel="noopener">
+                                    tesoreria@mpz.go.cr
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                    <div style="margin: 10px 0; display: flex; justify-content: center;">
+                        <a
+                            href="https://www.facebook.com/people/Municipalidad-de-P%C3%A9rez-Zeled%C3%B3n/100064767485821/"
+                            title="Facebook" target="_blank"
+                            style="display: inline-block; margin-right: 10px;">
+                            <img src="https://www.perezzeledon.go.cr/media/fb-image.png"
+                                alt="Facebook" title="Facebook" width="32"
+                                style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; height: auto;" />
+                        </a>
+                        <a href="mailto:tesoreria@mpz.go.cr" title="Correo Electronico"
+                            target="_blank" style="display: inline-block;">
+                            <img src="https://www.perezzeledon.go.cr/media/mail-image.png"
+                                alt="Correo Electronico" title="Correo Electronico" width="32"
+                                style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; height: auto;" />
+                        </a>
+                    </div>
+                    <div style="margin-bottom: 10px; text-align: center; color:#555;">
+                        <p>Le agradecemos el pago oportuno de sus deberes tributarios para
+                            mantenerse al día con la Municipalidad de Pérez Zeledón.</p>
+                    </div>
+                    <div style="text-align: center; color:#555;">
+                        <p>Municipalidad de Pérez Zeledón, San José Costa Rica</p>
+                    </div>
+                </footer>
+            </div>
+
+        </template>
+    </data>
+</odoo>
